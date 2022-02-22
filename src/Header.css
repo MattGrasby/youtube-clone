@@ -1,0 +1,80 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px whitesmoke;
+}
+
+.header__left {
+    height: 56px;
+    display: flex;
+    align-items: center;
+}
+
+.header__left > .menuIcon {
+    margin-left: 10px;
+}
+
+.header__left > img {
+    height: 56px;
+}
+
+.header__middle {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    flex: 0.7;
+}
+
+.header__middle > .searchButton {
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+    height: 40px;
+    width: 64px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+}
+.header__middle > .searchInput {
+    height: 36px;
+    border: 1px solid #ccc;
+    border-right: none;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Roboto';
+    text-indent: 10px;
+    width: 100%;
+    max-width: 520px;
+}
+
+.header__middle > .searchInput::placeholder {
+    color: grey;
+}
+
+
+.header__middle > .searchInput:focus {
+    outline: none;
+    border: 1px solid #030303;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+}
+
+.header__right > .avatarIcon {
+    margin-right: 10px;
+}
+
+.header__right > .avatarIcon,
+.header__right > .notificationIcon,
+.header__right > .createIcon,
+.header__right > .appsIcon {
+    padding: 8px;
+}
+
+.header__right > .avatarIcon:hover,
+.header__right > .notificationIcon:hover,
+.header__right > .createIcon:hover,
+.header__right > .appsIcon:hover {
+    cursor: pointer;
+}
